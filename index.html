@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" initial-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="dcb.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+        <title>ドレスとカジュアルのバランスを計る</title>
+    </head>
+    <body>
+        <div id=total_score>
+            <h4 id=title>ドレスとカジュアルのトータルバランス</h1>
+            <div id="total_comparison_space">
+                <div class="dc">
+                    <p>ドレス</p>
+                    <p>カジュアル</p>
+                </div>            　
+                <span id="total_comparison">結果</span>
+        　  </div>
+            <div id="backspace_top">
+            </div>
+        </div>
+        <section id="tops">
+            <h1>トップス</h1>
+            <div id="t_design_area">
+                <form>
+                    <h5>デザイン</h5>
+                    <label for="t_desigh" ></label>
+                        <select id="t_design" name="design_value">
+                            <option disabled selected value="選択してください">選択してください</option>
+                            <option value="カットソー">カットソー</option>
+                            <option value="シャツ">シャツ</option>
+                            <option value="ニット">ニット</option>
+                            <option value="ポロシャツ">ポロシャツ</option>
+                            <option value="パーカー">パーカー</option>
+                        </select>
+                </form>
+            </div>
+            <div id="t_silhoette_area">
+                <form id="t_silhoette_form">
+                    <h5>シルエット</h5>
+                    <label for="t_silhoette"></label>
+                        <label><input type="radio" name="t_silhoette" value="スリムサイズ">スリム</label>
+                        <label><input type="radio" name="t_silhoette" value="ジャストサイズ">ジャスト</label>
+                        <label><input type="radio" name="t_silhoette" value="オーバーサイズ">オーバー</label>
+                </form>
+            </div>
+            <div id="t_color_c_area">
+                <form id="t_color_c_form">
+                    <h5>カラー(色)</h5>
+                    <label for="t_color_c"></label>
+                        <label><input type="radio" name="t_color_c" value="黒or白">黒or白</label>
+                        <label><input type="radio" name="t_color_c" value="無彩色">無彩色</label>
+                        <label><input type="radio" name="t_color_c" value="有彩色">有彩色(柄含む)</label>
+                </form>
+            </div>
+            <div id="t_color_f_area">
+                <form id="t_color_f_form">
+                    <h5>カラー(素材)</h5>
+                    <label for="t_color_f"></label>
+                        <label><input type="radio" name="t_color_f" value="滑らか">滑らか</label>
+                        <label><input type="radio" name="t_color_f" value="中間">中間</label>
+                        <label><input type="radio" name="t_color_f" value="粗い">粗い</label>
+                </form>
+            </div>
+            <div id=tops_comparison_space>
+                <div class="dc">
+                    <p>ドレス</p>
+                    <p>カジュアル</p>
+                </div>
+                <span id=tops_comparison>計測中</span>
+            </div>
+        </section>
+        <section id="botoms">
+            <h1>ボトムス</h1>
+            <div>
+                <form>
+                    <h5>デザイン</h5>
+                    <label for="b_desigh"></label>
+                        <select id="b_design" name="design_value">
+                            <option disabled selected value="選択してください">選択してください</option>
+                            <option value ="スラックス">スラックス</option>
+                            <option value ="チノパンツ">チノパンツ</option>
+                            <option value ="カーゴパンツ">カーゴパンツ</option>
+                            <option value ="デニムパンツ">デニムパンツ</option>
+                        </select>
+                </form>
+            </div>
+            <div id="b_silhoette_area">
+                <form id="b_silhoette_form">
+                    <h5>シルエット</h5>
+                    <label for="b_silhoette"></label>
+                        <label><input type="radio" name="b_silhoette" value="スリムサイズ">スリム</label>
+                        <label><input type="radio" name="b_silhoette" value="ジャストサイズ">ジャスト</label>
+                        <label><input type="radio" name="b_silhoette" value="オーバーサイズ">オーバー</label>
+                </form>
+            </div>
+            <div id="b_color_c_area">
+                <form id="b_color_c_form">
+                    <h5>カラー(色)</h5>
+                    <label for="b_color_c"></label>
+                        <label><input type="radio" name="b_color_c" value="黒or白">黒or白</label>
+                        <label><input type="radio" name="b_color_c" value="無彩色">無彩色</label>
+                        <label><input type="radio" name="b_color_c" value="有彩色">有彩色(柄含む)</label>
+                </form>
+            </div>
+            <div id="b_color_f_area">
+                <form id="b_color_f_form">
+                    <h5>カラー(素材)</h5>
+                    <label for="b_color_f"></label>
+                        <label><input type="radio" name="b_color_f" value="滑らか">滑らか</label>
+                        <label><input type="radio" name="b_color_f" value="中間">中間</label>
+                        <label><input type="radio" name="b_color_f" value="粗い">粗い</label>
+                </form>
+            </div>
+            <div id="botoms_comparison_space">
+                <div class="dc">
+                    <p>ドレス</p>
+                    <p>カジュアル</p>
+                </div>
+                <span id="botoms_comparison">計測中</span>
+            </div>
+        </section>
+        <section id="shoes">
+            <h1>シューズ</h1>
+            <div>
+                <form>
+                    <h5>デザイン</h5>
+                    <label for="s_desigh"></label>
+                        <select id="s_design" name="design_value">
+                            <option disabled selected value="選択してください">選択してください</option>
+                            <option value ="ブーツ">ブーツ</option>
+                            <option value ="スリッポン">スリッポン</option>
+                            <option value ="ドレスシューズ">ドレスシューズ</option>
+                            <option value ="サンダル">サンダル</option>
+                        </select>
+                </form>
+            </div>
+            <div id="s_color_c_area">
+                <form id="s_color_c_form">
+                    <h5>カラー(色)</h5>
+                    <label for="s_color_c"></label>
+                        <label><input type="radio" name="s_color_c" value="黒or白">黒or白</label>
+                        <label><input type="radio" name="s_color_c" value="無彩色">無彩色</label>
+                        <label><input type="radio" name="s_color_c" value="有彩色">有彩色(柄含む)</label>
+                </form>
+            </div>
+            <div id="s_color_f_area">
+                <form id="s_color_f_form">
+                    <h5>カラー(素材)</h5>
+                    <label for="s_color_f"></label>
+                        <label><input type="radio" name="s_color_f" value="滑らか">滑らか</label>
+                        <label><input type="radio" name="s_color_f" value="中間">中間</label>
+                        <label><input type="radio" name="s_color_f" value="粗い">粗い</label>
+                </form>
+            </div>
+            <div id="shoes_comparison_space">
+                <div class="dc">
+                    <p>ドレス</p>
+                    <p>カジュアル</p>
+                </div>
+                <span id="shoes_comparison">計測中</span>
+            </div>
+        </section>   
+        <section id="outer">
+            <h1>アウター</h1>
+            <div>
+                <form>
+                    <h5>デザイン</h5>
+                    <label for="o_desigh"></label>
+                        <select id="o_design" name="design_value">
+                            <option disabled selected value="選択してください">選択してください</option>
+                            <option value ="ブルゾン">ブルゾン</option>
+                            <option value ="パーカー">パーカー</option>
+                            <option value ="シャツ">シャツ</option>
+                            <option value ="コート">コート</option>
+                            <option value ="カーディガン">カーディガン</option>
+                            <option value ="ジャケット">ジャケット</option>
+                        </select>
+                </form>
+            </div>
+            <div id="o_silhoette_area">
+                <form id="o_silhoette_form">
+                    <h5>シルエット</h5>
+                    <label for="o_silhoette"></label>
+                        <label><input type="radio" name="o_silhoette" value="スリムサイズ">スリム</label>
+                        <label><input type="radio" name="o_silhoette" value="ジャストサイズ">ジャスト</label>
+                        <label><input type="radio" name="o_silhoette" value="オーバーサイズ">オーバー</label>
+                </form>
+            </div>
+            <div id="o_color_c_area">
+                <form id="o_color_c_form">
+                    <h5>カラー(色)</h5>
+                    <label for="o_color_c"></label>
+                        <label><input type="radio" name="o_color_c" value="黒or白">黒or白</label>
+                        <label><input type="radio" name="o_color_c" value="無彩色">無彩色</label>
+                        <label><input type="radio" name="o_color_c" value="有彩色">有彩色(柄含む)</label>
+                </form>
+            </div>
+            <div id="o_color_f_area">
+                <form id="o_color_f_form">
+                    <h5>カラー(素材)</h5>
+                    <label for="o_color_f"></label>
+                    <label><input type="radio" name="o_color_f" value="滑らか">滑らか</label>
+                    <label><input type="radio" name="o_color_f" value="中間">中間</label>
+                    <label><input type="radio" name="o_color_f" value="粗い">粗い</label>
+                </form>
+            </div>
+            <div id="outer_comparison_space">
+                <div class="dc">
+                    <p>ドレス</p>
+                    <p>カジュアル</p>
+                </div>
+                <span id="outer_comparison">計測中</span>
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="dcb.js">
+</script>
+        <noscript>JavaScriptが利用できません</noscript>
+    </body>
+</html>
